@@ -1,0 +1,20 @@
+{
+  "name": "AI Logistics & Supply Chain",
+  "short_name": "AI Logistics",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#0d47a1",
+  "theme_color": "#0d47a1",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "iconn.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

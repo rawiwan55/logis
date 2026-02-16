@@ -1,0 +1,515 @@
+/* ===============================
+   RESET
+================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f4f6f9;
+  color: #222;
+  line-height: 1.7;
+}
+
+/* ===============================
+   NAVBAR
+================================ */
+header {
+  background: #a91233;
+  padding: 20px 0;
+}
+
+nav {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h2 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav ul li a:hover {
+  color: #ffd166;
+}
+
+/* ===============================
+   CONTAINER
+================================ */
+.container {
+  width: 90%;
+  margin: auto;
+  padding: 50px 0;
+}
+
+/* ===============================
+   PAGE TITLE
+================================ */
+.page-title {
+  background: linear-gradient(to right, #e81d50, #bc71cd);
+  color: white;
+  padding: 45px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.page-title h1 {
+  font-size: 2.3rem;
+  margin-bottom: 10px;
+}
+
+.page-title p {
+  font-size: 1.1rem;
+}
+
+/* ===============================
+   CONTENT BOX (กรอบหลัก)
+================================ */
+.content-box {
+  background: white;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 16px;
+  border-left: 8px solid #ff2fe3;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.content-box:hover {
+  transform: translateY(-6px);
+}
+
+/* ===============================
+   SUB BOX
+================================ */
+.sub-box {
+  background: #f8fbff;
+  padding: 25px;
+  margin-top: 20px;
+  border-radius: 14px;
+  border-left: 6px solid #d274ae;
+}
+
+/* ===============================
+   CARD GRID
+================================ */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card h3 {
+  color: #cc3581;
+  margin-bottom: 10px;
+}
+
+/* ===============================
+   QUIZ / HIGHLIGHT
+================================ */
+.highlight {
+  background: #fff7e6;
+  border-left: 8px solid #e7365f;
+}
+
+/* ===============================
+   BUTTON
+================================ */
+button {
+  padding: 10px 22px;
+  border-radius: 25px;
+  border: none;
+  background: #d7309a;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 5px;
+}
+
+button:hover {
+  background: #dd0f65;
+}
+
+/* ===============================
+   REFERENCES
+================================ */
+ol {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+ol li {
+  margin-bottom: 10px;
+}
+
+/* ===============================
+   FOOTER
+================================ */
+footer {
+  background: #e2136d;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  margin-top: 60px;
+}
+
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .page-title h1 {
+    font-size: 1.7rem;
+  }
+}
+.hero {
+    height: 50vh;              /* เต็มหน้าจอ */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    /* กึ่งกลางแนวตั้ง */
+    align-items: center;        /* กึ่งกลางแนวนอน */
+    text-align: center;
+    background: #fcdff4;        /* เปลี่ยนสีได้ */
+    color: white;
+    padding: 20px;
+}
+.feedback-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    max-width: 800px;
+    margin: auto;
+}
+
+.feedback-card img {
+    width: 100%;
+    height: auto;
+}
+/* ===== HERO BACKGROUND ===== */
+.hero {
+    height: 100vh;
+    background-image: 
+        linear-gradient(
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.55)
+        ),
+        url("images/home-bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+    padding: 40px;
+}
+
+/* ตัวอักษร */
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    max-width: 800px;
+    margin-bottom: 30px;
+}
+
+/* ปุ่ม */
+.hero .btn {
+    background: #00bcd4;
+    color: #fff;
+    padding: 14px 35px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.hero .btn:hover {
+    background: #0097a7;
+    transform: scale(1.05);
+}
+.hero {
+    height: 100vh;
+
+    /* รูปพื้นหลัง */
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.55)
+        ),
+        url("images/home-bg.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* จัดข้อความให้อยู่กลาง */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: #ffffff;
+    padding: 40px;
+}
+.quiz-container {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.quiz-container h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.quiz-container p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.quiz-box {
+    margin-bottom: 25px;
+}
+
+.quiz-box h4 {
+    margin-bottom: 10px;
+}
+
+.quiz-container button {
+    background: #00bcd4;
+    color: #fff;
+    padding: 12px 35px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+}
+
+.quiz-container button:hover {
+    background: #0097a7;
+}
+
+#result {
+    text-align: center;
+    margin-top: 25px;
+    color: #2e7d32;
+}
+/* ===============================
+   PACKAGE TRACKING SECTION
+================================ */
+
+.tracking-section {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  margin: 40px 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.tracking-section h2 {
+  margin-bottom: 15px;
+  color: #0b5ed7;
+}
+
+.tracking-section h3 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.tracking-section p {
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+.tracking-wrapper {
+  margin-top: 50px;   /* ปรับเลขได้ตามใจ */
+}
+.container {
+  margin: 35px auto;
+  width: 95%;
+}
+
+.section-title {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.pivot-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.pivot-table th {
+  background: #1f2d3d;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.pivot-table td {
+  padding: 8px 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+.pivot-table tbody tr:nth-child(even) {
+  background: #f7f9fb;
+}
+
+.pivot-table .num {
+  text-align: right;
+}
+
+.pivot-table tfoot tr {
+  background: #1f2d3d;
+  color: #fff;
+  font-weight: bold;
+}
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 14px;
+}
+
+.data-table th,
+.data-table td {
+  border: 1px solid #ccc;
+  padding: 8px 10px;
+  text-align: right;
+}
+
+.data-table th:first-child,
+.data-table td:first-child {
+  text-align: left;
+}
+
+.data-table thead {
+  background-color: #1f2d3d;
+  color: #fff;
+}
+
+.data-table tfoot {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+.summary {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f8fafc;
+  border-left: 5px solid #1f2d3d;
+}
+
+.summary h3 {
+  margin-bottom: 10px;
+}
+
+.summary ul {
+  margin-left: 20px;
+}
+.pivot-table th, .pivot-table td {
+  padding: 12px;
+}
+.pivot-table tr:nth-child(even) {
+  background: #f9f9f9;
+}
+table {
+  overflow-x: auto;
+  display: block;
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.references {
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    margin: 40px auto;
+    max-width: 900px;
+}
+
+.ref-list li {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.ref-list a {
+    color: #d63384;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.ref-list a:hover {
+    text-decoration: underline;
+}
+.dark {
+    background: #121212;
+    color: #fff;
+}
+
+.dark section {
+    background: #1e1e1e;
+}
